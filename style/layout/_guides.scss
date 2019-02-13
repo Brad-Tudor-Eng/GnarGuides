@@ -1,0 +1,73 @@
+.guides{
+    position: relative;    
+}
+
+.guides_header{
+    text-align: center;
+    color: white;
+    font-size: 8rem;
+    margin-top: 3rem;
+}
+
+.guides_body{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-image: -webkit-linear-gradient(0deg, rgba(black,.7), rgba(black,.7)) , url('/images/kayaking.jpg')   ;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh);
+}
+
+.guide_card{
+    display: flex;
+    position: relative;
+    height: 40rem;
+    width: 75rem;   
+    background-color: rgba(0,0,0,.4);
+    margin: 2rem;
+    color: white;
+    font-size: 3rem;
+
+    &-image{
+        height: 100%;
+        width: 40%;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    &-bio{
+        display: grid;
+        padding: 2rem;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 13rem 1fr;
+        align-items: center;
+    }
+
+    &--buckley{
+        transform: translateY(-10rem)
+    }
+
+    &--sally{
+        transform: translateY(10rem)
+    }
+
+    #buckley{
+        background-image: url('/images/buckley.jpg');
+        transform: scaleX(-1);
+    }
+
+    #cf{
+        background-image: url('/images/cflong.jpg');
+    }
+
+    #sally{
+        background-image: url('/images/sallydeep.jpg');
+    }
+}
+
+.label{
+    color: $color-secondary-light;
+    margin-right: 2rem;
+}

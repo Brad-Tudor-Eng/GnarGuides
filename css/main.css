@@ -1,0 +1,231 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  background-color: black; }
+
+.container_main {
+  color: white; }
+
+.header {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("/images/mountain-biking.jpg");
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 70vh); }
+
+.header_container {
+  width: 60%;
+  padding-top: 17vh;
+  padding-left: 10rem; }
+
+.container_main {
+  font-family: 'Indie Flower', cursive;
+  font-size: 10rem;
+  color: #f1f1f1;
+  line-height: 5rem; }
+
+.container_sub {
+  font-family: 'Indie Flower', cursive;
+  font-size: 5rem;
+  letter-spacing: .5rem;
+  color: #f1f1f1; }
+
+.sports {
+  width: 100%;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
+  z-index: -1;
+  padding-top: 10rem; }
+  .sports_header {
+    text-align: center;
+    font-size: 8rem;
+    margin-top: 3rem;
+    margin-bottom: -5rem; }
+    .sports_header--main {
+      color: white; }
+    .sports_header--sub {
+      color: #d6d6d6;
+      font-weight: 100;
+      font-size: 5rem;
+      line-height: 4rem;
+      letter-spacing: .5rem; }
+  .sports_row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .sports_card {
+    position: relative;
+    height: 40rem;
+    width: 65rem;
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+    overflow: hidden;
+    background-size: cover; }
+    .sports_card:hover .inner {
+      transform: translateY(-40rem); }
+    .sports_card .icon {
+      display: inline;
+      margin-right: 2rem;
+      font-size: 3rem;
+      color: #15bdff; }
+    .sports_card .inner {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+      top: 40rem;
+      left: 0;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      transition: all .5s; }
+      .sports_card .inner_header {
+        font-size: 4.5rem;
+        margin-bottom: 5rem; }
+      .sports_card .inner_content {
+        color: white;
+        font-size: 2rem;
+        display: grid;
+        grid-template-rows: 8rem 8rem;
+        grid-template-columns: 15rem 15rem;
+        grid-column-gap: 13rem;
+        align-items: center; }
+      .sports_card .inner_button {
+        display: inline-block;
+        width: 25rem;
+        margin: 2rem;
+        font-size: 3rem;
+        padding: .5rem;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        cursor: pointer; }
+        .sports_card .inner_button:hover {
+          color: orange; }
+    .sports_card--pg {
+      background-image: url("/images/paragliding-dark.jpg"); }
+    .sports_card--diving {
+      background-image: url("/images/scuba-wreck.jpg"); }
+    .sports_card--skiing {
+      background-image: url("/images/skijump.jpg"); }
+    .sports_card--rainforest {
+      background-image: url("/images/rainforest-hiking.jpg"); }
+    .sports_card--snowboarding {
+      background-image: url("/images/lukas-neasi-65748-unsplash.jpg"); }
+    .sports_card--climbing {
+      background-image: url("/images/tommy-lisbin-316758-unsplash.jpg"); }
+
+.content_row {
+  height: 10rem; }
+
+.innerUp {
+  position: absolute;
+  left: 50%;
+  font-size: 4rem;
+  color: #15bdff;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; }
+
+@keyframes example {
+  0% {
+    font-size: 4rem;
+    top: -6rem; }
+  50% {
+    font-size: 4.25rem;
+    top: -6.5rem; }
+  100% {
+    font-size: 4rem;
+    top: -6rem; } }
+
+.guides {
+  position: relative; }
+
+.guides_header {
+  text-align: center;
+  color: white;
+  font-size: 8rem;
+  margin-top: 3rem; }
+
+.guides_body {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/kayaking.jpg");
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh); }
+
+.guide_card {
+  display: flex;
+  position: relative;
+  height: 40rem;
+  width: 75rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 2rem;
+  color: white;
+  font-size: 3rem; }
+  .guide_card-image {
+    height: 100%;
+    width: 40%;
+    background-size: cover;
+    overflow: hidden; }
+  .guide_card-bio {
+    display: grid;
+    padding: 2rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 13rem 1fr;
+    align-items: center; }
+  .guide_card--buckley {
+    transform: translateY(-10rem); }
+  .guide_card--sally {
+    transform: translateY(10rem); }
+  .guide_card #buckley {
+    background-image: url("/images/buckley.jpg");
+    transform: scaleX(-1); }
+  .guide_card #cf {
+    background-image: url("/images/cflong.jpg"); }
+  .guide_card #sally {
+    background-image: url("/images/sallydeep.jpg"); }
+
+.label {
+  color: #15bdff;
+  margin-right: 2rem; }
+
+.contact {
+  color: white; }
+
+.footer {
+  margin-top: 3rem;
+  width: 100%; }
+  .footer_header {
+    color: white;
+    text-align: center;
+    font-size: 8rem;
+    margin-top: 3rem;
+    border-bottom: 0.25rem solid #15bdff; }
+  .footer_body {
+    padding: 5rem;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around; }
+    .footer_body h4 {
+      color: white;
+      font-size: 2.5rem; }
+    .footer_body p {
+      color: #c2c0c0;
+      font-size: 2rem;
+      padding-left: 1.5rem; }

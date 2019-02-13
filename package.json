@@ -1,0 +1,21 @@
+{
+  "name": "gnarguides",
+  "version": "1.0.0",
+  "description": "Adventure Guides",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass \"style/main.scss\"  \"css/main.css\" -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass style/main.scss css/main.css",
+    "compress:css": "node-sass css/main.css css/style.css",
+    "build:css": "npm-run-all compile:sass compress:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^1.11.0"
+  }
+}
