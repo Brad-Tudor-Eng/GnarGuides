@@ -3,11 +3,12 @@
 @import "./base/base";
 @import "./base/typography";
 
-
+//components
+@import "./components/card";
 
 // layout
 @import "./layout/main";
 @import "./layout/sports";
 @import "./layout/guides";
-@import "./layout/contact";
+@import "./layout/about";
 @import "./layout/footer";

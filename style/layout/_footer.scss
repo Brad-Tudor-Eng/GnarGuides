@@ -3,30 +3,18 @@
     margin-top: 3rem;
     width: 100%;
 
-
     &_header{
-        color: white;
         text-align: center;
-        font-size: 8rem;
         margin-top: 3rem;
         border-bottom: .25rem solid $color-secondary-light;
     }
 
     &_body{
         padding: 5rem;
-        color: white;
-        font-size: 2.5rem;
         display: flex;
         justify-content: space-around;
 
-        & h4{
-            color: white;
-            font-size: 2.5rem;
-        }
-
         & p{
-            color: rgb(194, 192, 192);
-            font-size: 2rem;
             padding-left: 1.5rem;
         }
     }

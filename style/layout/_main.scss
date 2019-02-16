@@ -12,25 +12,21 @@
 }
 
 .header_container{
-    width: 60%;
+    width: 50%;
     padding-top: 17vh;
     padding-left: 10rem;
+    @include respond(desktop){
+        width: 50%;
+     }
+ 
+     @include respond(tab){
+        width: 60%;
+     }
 
+     @include respond(phone){
+        width: 80%;
+    }
 
 }
 
-.container{
-    &_main{
-        font-family: 'Indie Flower', cursive;
-        font-size: 10rem;
-        color: rgb(241, 241, 241);
-        line-height: 5rem;
-    }
 
-    &_sub{
-        font-family: 'Indie Flower', cursive;
-        font-size: 5rem;
-        letter-spacing: .5rem;
-        color: rgb(241, 241, 241);
-    }
-}

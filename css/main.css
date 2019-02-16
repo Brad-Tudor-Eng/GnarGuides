@@ -6,16 +6,13 @@
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 38em) {
+  @media only screen and (max-width: 100em) {
     html {
-      font-size: 32.5%; } }
+      font-size: 62.5%; } }
   @media only screen and (max-width: 66em) {
     html {
-      font-size: 32.5%; } }
-  @media only screen and (max-width: 83em) {
-    html {
-      font-size: 32.5%; } }
-  @media only screen and (max-width: 100em) {
+      font-size: 47%; } }
+  @media only screen and (max-width: 52em) {
     html {
       font-size: 32.5%; } }
 
@@ -23,9 +20,182 @@ body {
   box-sizing: border-box;
   padding: 3rem;
   background-color: black; }
+  @media only screen and (max-width: 100em) {
+    body {
+      padding: 3rem; } }
+  @media only screen and (max-width: 66em) {
+    body {
+      padding: 1rem; } }
+  @media only screen and (max-width: 52em) {
+    body {
+      padding: .5em; } }
 
-.container_main {
-  color: white; }
+.H {
+  font-family: 'EB Garamond', serif; }
+  .H--main {
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    color: #FFF;
+    font-size: 9rem;
+    line-height: 8.5rem;
+    letter-spacing: .5rem; }
+    @media only screen and (max-width: 100em) {
+      .H--main {
+        font-size: 9rem;
+        line-height: 8.5rem;
+        letter-spacing: .5rem; } }
+    @media only screen and (max-width: 66em) {
+      .H--main {
+        font-size: 8rem;
+        letter-spacing: .25rem; } }
+    @media only screen and (max-width: 52em) {
+      .H--main {
+        font-size: 7rem;
+        letter-spacing: 0rem; } }
+  .H--sub {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    color: #cdcdcd;
+    font-size: 4.5rem; }
+    @media only screen and (max-width: 100em) {
+      .H--sub {
+        font-size: 4.5rem; } }
+    @media only screen and (max-width: 66em) {
+      .H--sub {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 52em) {
+      .H--sub {
+        font-size: 3.75rem; } }
+
+.S {
+  color: #FFF;
+  font-size: 3rem; }
+  .S--icon {
+    color: #15bdff;
+    font-size: 3rem; }
+
+.container {
+  font-family: 'Indie Flower', cursive; }
+  .container_main {
+    font-size: 10rem;
+    color: #f1f1f1;
+    line-height: 8rem;
+    display: inline; }
+    @media only screen and (max-width: 100em) {
+      .container_main {
+        font-size: 10rem;
+        line-height: 8rem;
+        display: inline; } }
+    @media only screen and (max-width: 66em) {
+      .container_main {
+        font-size: 9rem;
+        line-height: 8rem;
+        display: block; } }
+    @media only screen and (max-width: 52em) {
+      .container_main {
+        font-size: 8rem;
+        line-height: 7rem;
+        display: block; } }
+  .container_sub {
+    font-size: 5rem;
+    letter-spacing: .5rem;
+    color: #f1f1f1; }
+    @media only screen and (max-width: 100em) {
+      .container_sub {
+        font-size: 5rem;
+        letter-spacing: .5rem; } }
+    @media only screen and (max-width: 66em) {
+      .container_sub {
+        font-size: 4.5rem;
+        letter-spacing: .25rem; } }
+    @media only screen and (max-width: 52em) {
+      .container_sub {
+        font-size: 4rem;
+        letter-spacing: 0rem; } }
+
+.inner {
+  color: #FFF; }
+  .inner_header {
+    font-size: 4.5rem; }
+  .inner_content {
+    font-size: 2rem; }
+    @media only screen and (max-width: 100em) {
+      .inner_content {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 66em) {
+      .inner_content {
+        font-size: 1rem; } }
+    @media only screen and (max-width: 52em) {
+      .inner_content {
+        font-size: 1rem; } }
+  .inner_button:hover {
+    color: orange; }
+
+.label {
+  color: #15bdff; }
+
+.footer_body {
+  color: #FFF;
+  font-size: 2.5rem; }
+  .footer_body h4 {
+    color: #FFF;
+    font-size: 2.5rem; }
+  .footer_body p {
+    color: #cdcdcd;
+    font-size: 2rem; }
+
+.card {
+  position: relative;
+  height: 40rem;
+  width: 65rem;
+  margin-top: 8vh;
+  margin-bottom: 2vh;
+  overflow: hidden;
+  background-size: cover; }
+  .card:hover .inner {
+    transform: translateY(-40rem); }
+  .card .icon {
+    display: inline;
+    margin-right: 2rem; }
+  .card .inner {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    top: 40rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    transition: all .5s; }
+    .card .inner_header {
+      margin-bottom: 5rem; }
+    .card .inner_content {
+      display: grid;
+      grid-template-rows: 8rem 8rem;
+      grid-template-columns: 15rem 15rem;
+      grid-column-gap: 13rem;
+      align-items: center; }
+    .card .inner_button {
+      display: inline-block;
+      width: 25rem;
+      margin: 2rem;
+      padding: .5rem;
+      background-color: rgba(0, 0, 0, 0);
+      cursor: pointer; }
+  .card--pg {
+    background-image: url("/images/paragliding-dark.jpg"); }
+  .card--diving {
+    background-image: url("/images/scuba-wreck.jpg"); }
+  .card--skiing {
+    background-image: url("/images/skijump.jpg"); }
+  .card--rainforest {
+    background-image: url("/images/rainforest-hiking.jpg"); }
+  .card--snowboarding {
+    background-image: url("/images/lukas-neasi-65748-unsplash.jpg"); }
+  .card--climbing {
+    background-image: url("/images/tommy-lisbin-316758-unsplash.jpg"); }
 
 .header {
   position: relative;
@@ -36,21 +206,18 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 70vh); }
 
 .header_container {
-  width: 60%;
+  width: 50%;
   padding-top: 17vh;
   padding-left: 10rem; }
-
-.container_main {
-  font-family: 'Indie Flower', cursive;
-  font-size: 10rem;
-  color: #f1f1f1;
-  line-height: 5rem; }
-
-.container_sub {
-  font-family: 'Indie Flower', cursive;
-  font-size: 5rem;
-  letter-spacing: .5rem;
-  color: #f1f1f1; }
+  @media only screen and (max-width: 100em) {
+    .header_container {
+      width: 50%; } }
+  @media only screen and (max-width: 66em) {
+    .header_container {
+      width: 60%; } }
+  @media only screen and (max-width: 52em) {
+    .header_container {
+      width: 80%; } }
 
 .sports {
   width: 100%;
@@ -60,83 +227,15 @@ body {
   padding-top: 10rem; }
   .sports_header {
     text-align: center;
-    font-size: 8rem;
     margin-top: 3rem;
     margin-bottom: -5rem; }
-    .sports_header--main {
-      color: white; }
     .sports_header--sub {
-      color: #d6d6d6;
-      font-weight: 100;
-      font-size: 5rem;
       line-height: 4rem;
       letter-spacing: .5rem; }
   .sports_row {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
-  .sports_card {
-    position: relative;
-    height: 40rem;
-    width: 65rem;
-    margin-top: 8vh;
-    margin-bottom: 2vh;
-    overflow: hidden;
-    background-size: cover; }
-    .sports_card:hover .inner {
-      transform: translateY(-40rem); }
-    .sports_card .icon {
-      display: inline;
-      margin-right: 2rem;
-      font-size: 3rem;
-      color: #15bdff; }
-    .sports_card .inner {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-      top: 40rem;
-      left: 0;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      flex-direction: column;
-      transition: all .5s; }
-      .sports_card .inner_header {
-        font-size: 4.5rem;
-        margin-bottom: 5rem; }
-      .sports_card .inner_content {
-        color: white;
-        font-size: 2rem;
-        display: grid;
-        grid-template-rows: 8rem 8rem;
-        grid-template-columns: 15rem 15rem;
-        grid-column-gap: 13rem;
-        align-items: center; }
-      .sports_card .inner_button {
-        display: inline-block;
-        width: 25rem;
-        margin: 2rem;
-        font-size: 3rem;
-        padding: .5rem;
-        background-color: rgba(0, 0, 0, 0);
-        color: white;
-        cursor: pointer; }
-        .sports_card .inner_button:hover {
-          color: orange; }
-    .sports_card--pg {
-      background-image: url("/images/paragliding-dark.jpg"); }
-    .sports_card--diving {
-      background-image: url("/images/scuba-wreck.jpg"); }
-    .sports_card--skiing {
-      background-image: url("/images/skijump.jpg"); }
-    .sports_card--rainforest {
-      background-image: url("/images/rainforest-hiking.jpg"); }
-    .sports_card--snowboarding {
-      background-image: url("/images/lukas-neasi-65748-unsplash.jpg"); }
-    .sports_card--climbing {
-      background-image: url("/images/tommy-lisbin-316758-unsplash.jpg"); }
 
 .content_row {
   height: 10rem; }
@@ -166,8 +265,6 @@ body {
 
 .guides_header {
   text-align: center;
-  color: white;
-  font-size: 8rem;
   margin-top: 3rem; }
 
 .guides_body {
@@ -179,6 +276,25 @@ body {
   background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/kayaking.jpg");
   background-size: cover;
   clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh); }
+  @media only screen and (max-width: 100em) {
+    .guides_body {
+      flex-direction: row;
+      height: 80vh;
+      clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh); } }
+  @media only screen and (max-width: 66em) {
+    .guides_body {
+      flex-direction: column;
+      justify-content: center;
+      height: 80vh;
+      margin-top: 10vh;
+      clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh); } }
+  @media only screen and (max-width: 52em) {
+    .guides_body {
+      font-size: 8rem;
+      line-height: 7rem;
+      margin-top: 5vh;
+      clip-path: none;
+      height: 100vh; } }
 
 .guide_card {
   display: flex;
@@ -186,14 +302,36 @@ body {
   height: 40rem;
   width: 75rem;
   background-color: rgba(0, 0, 0, 0.4);
-  margin: 2rem;
-  color: white;
-  font-size: 3rem; }
+  margin: 2rem; }
+  @media only screen and (max-width: 100em) {
+    .guide_card {
+      height: 40rem;
+      width: 75rem;
+      margin: 2rem; } }
+  @media only screen and (max-width: 66em) {
+    .guide_card {
+      height: 30rem;
+      width: 90%;
+      margin: .25rem; } }
+  @media only screen and (max-width: 52em) {
+    .guide_card {
+      height: 30rem;
+      width: 90%;
+      margin: 2rem; } }
   .guide_card-image {
-    height: 100%;
-    width: 40%;
+    height: 40rem;
+    width: 30rem;
     background-size: cover;
     overflow: hidden; }
+    @media only screen and (max-width: 100em) {
+      .guide_card-image {
+        height: 40rem; } }
+    @media only screen and (max-width: 66em) {
+      .guide_card-image {
+        height: 30rem; } }
+    @media only screen and (max-width: 52em) {
+      .guide_card-image {
+        height: 30rem; } }
   .guide_card-bio {
     display: grid;
     padding: 2rem;
@@ -211,30 +349,26 @@ body {
     background-image: url("/images/cflong.jpg"); }
   .guide_card #sally {
     background-image: url("/images/sallydeep.jpg"); }
+    @media only screen and (max-width: 66em) {
+      .guide_card #sally {
+        background-position-y: 50%; } }
+    @media only screen and (max-width: 52em) {
+      .guide_card #sally {
+        background-position-y: 50%; } }
 
 .label {
-  color: #15bdff;
   margin-right: 2rem; }
 
 .footer {
   margin-top: 3rem;
   width: 100%; }
   .footer_header {
-    color: white;
     text-align: center;
-    font-size: 8rem;
     margin-top: 3rem;
     border-bottom: 0.25rem solid #15bdff; }
   .footer_body {
     padding: 5rem;
-    color: white;
-    font-size: 2.5rem;
     display: flex;
     justify-content: space-around; }
-    .footer_body h4 {
-      color: white;
-      font-size: 2.5rem; }
     .footer_body p {
-      color: #c2c0c0;
-      font-size: 2rem;
       padding-left: 1.5rem; }

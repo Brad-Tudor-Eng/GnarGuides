@@ -1,3 +1,160 @@
-.container_main{
-    color: white;
+
+.H{
+    font-family: 'EB Garamond', serif;
+    &--main{
+        font-family: 'EB Garamond', serif;
+        font-weight: 500;
+        color: $color-white;
+        font-size: 9rem;
+        line-height: 8.5rem;
+        letter-spacing: .5rem;
+
+        @include respond(desktop){
+            font-size: 9rem;
+            line-height: 8.5rem;
+            letter-spacing: .5rem;
+         }
+     
+         @include respond(tab){
+            font-size: 8rem;
+            letter-spacing: .25rem;
+         }
+
+         @include respond(phone){
+            font-size: 7rem;
+            letter-spacing: 0rem;
+        }
+    }
+
+    &--sub{
+        font-family: 'EB Garamond', serif;
+        font-weight: 400;
+        color: $color-grey-1;
+        font-size: 4.5rem;
+
+        @include respond(desktop){
+            font-size: 4.5rem;
+         }
+     
+         @include respond(tab){
+            font-size: 4rem;
+         }
+
+         @include respond(phone){
+            font-size: 3.75rem;
+        }
+    }
+
+    &--tertiary{
+
+    }
+}
+
+.S{
+    color: $color-white;
+    font-size: 3rem;
+
+    &--icon{
+        color: $color-secondary-light;
+        font-size: 3rem;
+    }
+}
+
+
+
+
+.container{
+    font-family: 'Indie Flower', cursive;
+    &_main{
+        font-size: 10rem;
+        color: $color-grey-o;
+        line-height: 8rem;
+        display: inline;
+
+        @include respond(desktop){
+            font-size: 10rem;
+            line-height: 8rem;
+            display: inline;
+         }
+     
+         @include respond(tab){
+            font-size: 9rem;
+            line-height: 8rem;
+            display: block;
+         }
+
+         @include respond(phone){
+            font-size: 8rem;
+            line-height: 7rem;
+            display: block;
+        }
+    }
+
+    &_sub{
+        font-size: 5rem;
+        letter-spacing: .5rem;
+        color: $color-grey-o;
+
+        @include respond(desktop){
+            font-size: 5rem;
+            letter-spacing: .5rem;
+         }
+     
+         @include respond(tab){
+            font-size: 4.5rem;
+            letter-spacing: .25rem;
+         }
+
+         @include respond(phone){
+            font-size: 4rem;
+            letter-spacing: 0rem;
+        }
+    }
+}
+
+
+
+
+.inner{
+    color: $color-white;
+
+    &_header{
+        font-size: 4.5rem;
+    }
+
+    &_content{
+        font-size: 2rem;
+
+
+    }
+
+    &_button{
+        &:hover{
+            color: orange;
+        }
+    }
+}
+
+.label{
+    color: $color-secondary-light;
+}
+
+
+.footer{
+
+
+    &_body{
+        color: $color-white;
+        font-size: 2.5rem;
+
+        & h4{
+            color: $color-white;
+            font-size: 2.5rem;
+        }
+
+        & p{
+            color: $color-grey-1;
+            font-size: 2rem;
+        }
+    }
 }

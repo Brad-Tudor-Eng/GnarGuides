@@ -4,8 +4,6 @@
 
 .guides_header{
     text-align: center;
-    color: white;
-    font-size: 8rem;
     margin-top: 3rem;
 }
 
@@ -18,6 +16,34 @@
     background-image: -webkit-linear-gradient(0deg, rgba(black,.7), rgba(black,.7)) , url('/images/kayaking.jpg')   ;
     background-size: cover;
     clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh);
+
+
+
+
+    @include respond(desktop){
+       flex-direction: row;
+       height: 80vh;
+       clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh);
+    }
+
+    @include respond(tab){
+        flex-direction: column;
+        justify-content: center;
+        height: 80vh;
+        margin-top: 10vh;
+        clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh);
+    }
+
+    @include respond(phone){
+        font-size: 8rem;
+        line-height: 7rem;
+        margin-top: 5vh;
+        clip-path: none;
+        height: 100vh;
+    }
+
+
+
 }
 
 .guide_card{
@@ -27,14 +53,42 @@
     width: 75rem;   
     background-color: rgba(0,0,0,.4);
     margin: 2rem;
-    color: white;
-    font-size: 3rem;
+
+    @include respond(desktop){
+        height: 40rem;
+        width: 75rem;
+        margin: 2rem;   
+     }
+ 
+     @include respond(tab){
+        height: 30rem;
+        width: 90%;   
+        margin: .25rem;
+     }
+
+     @include respond(phone){
+        height: 30rem;
+        width: 90%;   
+        margin: 2rem;
+     }
 
     &-image{
-        height: 100%;
-        width: 40%;
+        height: 40rem;
+        width: 30rem;
         background-size: cover;
         overflow: hidden;
+
+        @include respond(desktop){
+            height: 40rem;
+        }
+    
+        @include respond(tab){
+            height: 30rem;
+        }
+
+        @include respond(phone){
+            height: 30rem;   
+         }
     }
 
     &-bio{
@@ -43,6 +97,7 @@
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 13rem 1fr;
         align-items: center;
+
     }
 
     &--buckley{
@@ -64,10 +119,17 @@
 
     #sally{
         background-image: url('/images/sallydeep.jpg');
+
+        @include respond(tab){
+            background-position-y: 50%;
+         }
+
+        @include respond(phone){
+            background-position-y: 50%;
+         }
     }
 }
 
 .label{
-    color: $color-secondary-light;
     margin-right: 2rem;
 }

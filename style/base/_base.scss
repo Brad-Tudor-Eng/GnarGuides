@@ -8,25 +8,34 @@
 html{
     font-size: 62.5%;
 
-    @include respond(sm-phone){
+    @include respond(desktop){
+        font-size: 62.5%;
+     }
+
+    @include respond(tab){
+        font-size: 47%;
+    }
+
+    @include respond(phone){
         font-size: 32.5%;
     }
 
-    @include respond(sm-tab){
-        font-size: 42.5%;
-    }
-
-    @include respond(lg-tab){
-        font-size: 52.5%;
-    }
-
-    @include respond(desktop){
-        font-size: 62.5%;
-    }
 }
 
 body{
     box-sizing: border-box;
     padding: 3rem;
     background-color: black;
+
+    @include respond(desktop){
+        padding: 3rem;
+     }
+ 
+     @include respond(tab){
+        padding: 1rem;
+     }
+
+     @include respond(phone){
+        padding: .5em;
+    }
 }
