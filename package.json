@@ -6,15 +6,17 @@
   "scripts": {
     "watch:sass": "node-sass \"style/main.scss\"  \"css/main.css\" -w",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass",
+    "start-dev": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass style/main.scss css/main.css",
     "compress:css": "node-sass css/main.css css/style.css",
     "build:css": "npm-run-all compile:sass compress:css",
-    "bundle": "parcel build index.html --out-dir build"
+    "bundle": "parcel build index.html --out-dir ./serve/client",
+    "start": "node ./serve/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.4",
     "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.5",
     "parcel": "^1.11.0"
