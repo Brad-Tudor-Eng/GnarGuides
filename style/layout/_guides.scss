@@ -34,7 +34,15 @@
         clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh);
     }
 
-    @include respond(phone){
+    @include respond(lg-phone){
+        font-size: 8rem;
+        line-height: 7rem;
+        margin-top: 5vh;
+        clip-path: none;
+        height: 100vh;
+    }
+
+    @include respond(sm-phone){
         font-size: 8rem;
         line-height: 7rem;
         margin-top: 5vh;
@@ -66,7 +74,13 @@
         margin: .25rem;
      }
 
-     @include respond(phone){
+     @include respond(lg-phone){
+        height: 30rem;
+        width: 90%;   
+        margin: 2rem;
+     }
+
+     @include respond(sm-phone){
         height: 30rem;
         width: 90%;   
         margin: 2rem;
@@ -86,7 +100,11 @@
             height: 30rem;
         }
 
-        @include respond(phone){
+        @include respond(lg-phone){
+            height: 30rem;   
+         }
+
+         @include respond(sm-phone){
             height: 30rem;   
          }
     }
@@ -124,7 +142,11 @@
             background-position-y: 50%;
          }
 
-        @include respond(phone){
+        @include respond(ls-phone){
+            background-position-y: 50%;
+         }
+
+         @include respond(sm-phone){
             background-position-y: 50%;
          }
     }

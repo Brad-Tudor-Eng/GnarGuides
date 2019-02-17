@@ -20,7 +20,12 @@
             letter-spacing: .25rem;
          }
 
-         @include respond(phone){
+         @include respond(lg-phone){
+            font-size: 7rem;
+            letter-spacing: 0rem;
+        }
+
+        @include respond(sm-phone){
             font-size: 7rem;
             letter-spacing: 0rem;
         }
@@ -40,7 +45,11 @@
             font-size: 4rem;
          }
 
-         @include respond(phone){
+         @include respond(lg-phone){
+            font-size: 3.75rem;
+        }
+
+        @include respond(sm-phone){
             font-size: 3.75rem;
         }
     }
@@ -83,7 +92,13 @@
             display: block;
          }
 
-         @include respond(phone){
+         @include respond(lg-phone){
+            font-size: 8rem;
+            line-height: 7rem;
+            display: block;
+        }
+
+        @include respond(sm-phone){
             font-size: 8rem;
             line-height: 7rem;
             display: block;
@@ -105,7 +120,12 @@
             letter-spacing: .25rem;
          }
 
-         @include respond(phone){
+         @include respond(lg-phone){
+            font-size: 4rem;
+            letter-spacing: 0rem;
+        }
+
+        @include respond(sm-phone){
             font-size: 4rem;
             letter-spacing: 0rem;
         }

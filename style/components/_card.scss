@@ -8,7 +8,23 @@
     background-size: cover;
 
     &:hover .inner{
-        transform: translateY(-40rem)
+        transform: translateY(-40rem);
+
+        @include respond(desktop){
+            transform: translateY(0rem);
+        }
+        
+        @include respond(tab){
+            transform: translateY(0rem);
+         }
+        
+        @include respond(lg-phone){
+            transform: translateY(0rem);
+        }
+        
+        @include respond(sm-phone){
+            transform: translateY(0rem);
+        }
     }
 
     .icon{
@@ -29,6 +45,22 @@
         justify-content: space-around;
         flex-direction: column;
         transition: all .5s;
+
+        @include respond(desktop){
+            top: 0rem;
+        }
+        
+        @include respond(tab){
+            top: 0rem;
+         }
+        
+        @include respond(lg-phone){
+            top: 0rem;
+        }
+        
+        @include respond(sm-phone){
+            top: 0rem;
+        }
 
         &_header{
             margin-bottom: 5rem;

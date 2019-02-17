@@ -11,6 +11,7 @@
     "compress:css": "node-sass css/main.css css/style.css",
     "build:css": "npm-run-all compile:sass compress:css",
     "bundle": "parcel build index.html --out-dir ./serve/client",
+    "build": "npm-run-all build:css bundle",
     "start": "node ./serve/index.js"
   },
   "author": "",
