@@ -5,7 +5,7 @@
         font-family: 'EB Garamond', serif;
         font-weight: 500;
         color: $color-white;
-        font-size: 9rem;
+        font-size: 8.5rem;
         line-height: 8.5rem;
         letter-spacing: .5rem;
 
@@ -22,7 +22,7 @@
     @include respond(sm-phone){
         &--main{
             font-size: 7rem;
-            line-height: 8.5rem;
+            margin-top: 0;
             letter-spacing: .5rem;
 
             @include respond(sm-phone){

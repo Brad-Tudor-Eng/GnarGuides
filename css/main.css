@@ -33,7 +33,7 @@ body {
     font-family: 'EB Garamond', serif;
     font-weight: 500;
     color: #FFF;
-    font-size: 9rem;
+    font-size: 8.5rem;
     line-height: 8.5rem;
     letter-spacing: .5rem; }
   .H--sub {
@@ -44,7 +44,7 @@ body {
   @media all and (min-width: 374px) and (max-width: 480px) {
     .H--main {
       font-size: 7rem;
-      line-height: 8.5rem;
+      margin-top: 0;
       letter-spacing: .5rem; } }
   @media all and (min-width: 374px) and (max-width: 480px) and (min-width: 374px) and (max-width: 480px) {
     .H--main {
@@ -218,9 +218,6 @@ body {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: -5rem; }
-    .sports_header--sub {
-      line-height: 4rem;
-      letter-spacing: .5rem; }
   .sports_row {
     display: flex;
     justify-content: space-around;
