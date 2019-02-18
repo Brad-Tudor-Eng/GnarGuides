@@ -86,7 +86,8 @@ body {
 .container_main {
   font-size: 10rem;
   color: #f1f1f1;
-  display: inline; }
+  display: inline;
+  letter-spacing: .1rem; }
 
 .container_sub {
   font-size: 4.5rem;
@@ -407,7 +408,8 @@ body {
 .footer_header {
   text-align: center;
   margin-top: 3rem;
-  border-bottom: 0.25rem solid #15bdff; }
+  border-bottom: 0.25rem solid #15bdff;
+  padding-bottom: 2rem; }
 
 .footer_body {
   padding: 5rem;
