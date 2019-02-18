@@ -148,6 +148,9 @@ body {
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 5rem;
       align-items: center; }
+      @media all and (min-width: 374px) and (max-width: 480px) {
+        .card .inner_content {
+          grid-template-rows: 5rem 5rem; } }
     .card .inner_button {
       display: inline-block;
       width: 25rem;

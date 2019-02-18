@@ -63,6 +63,10 @@
             grid-template-columns: 1fr 1fr;
             grid-column-gap: 5rem;
             align-items: center;
+
+            @include respond(sm-phone){
+                grid-template-rows: 5rem 5rem;
+            }
         }
 
         &_button{
