@@ -57,20 +57,9 @@
         &_content{
             display: grid;
             grid-template-rows: 8rem 8rem;
-            grid-template-columns: 15rem 15rem;
-            grid-column-gap: 13rem;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: .25fr;
             align-items: center;
-
-            @include respond(tab){
-                grid-template-columns: 25rem 25rem;
-                grid-column-gap: 5rem;
-            }
-
-            @include respond(sm-phone){
-                grid-template-columns: 25rem 25rem;
-                grid-column-gap: 5rem;
-            }
- 
         }
 
         &_button{

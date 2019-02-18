@@ -168,19 +168,9 @@ body {
 .card .inner_content {
   display: grid;
   grid-template-rows: 8rem 8rem;
-  grid-template-columns: 15rem 15rem;
-  grid-column-gap: 13rem;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: .25fr;
   align-items: center; }
-
-@media all and (min-width: 481px) and (max-width: 1024px) {
-  .card .inner_content {
-    grid-template-columns: 25rem 25rem;
-    grid-column-gap: 5rem; } }
-
-@media all and (min-width: 374px) and (max-width: 480px) {
-  .card .inner_content {
-    grid-template-columns: 25rem 25rem;
-    grid-column-gap: 5rem; } }
 
 .card .inner_button {
   display: inline-block;
