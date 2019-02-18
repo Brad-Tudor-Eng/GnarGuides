@@ -7,19 +7,15 @@
 html {
   font-size: 62.5%; }
 
-@media all and (min-width: 1200px) and (max-width: 1690px) {
+@media all and (min-width: 481px) and (max-width: 1024px) {
   html {
-    font-size: 62.5%; } }
+    font-size: 52.5%; } }
 
-@media all and (min-width: 960px) and (max-width: 1199px) {
+@media all and (min-width: 481px) and (max-width: 1024px) {
   html {
-    font-size: 47%; } }
+    font-size: 42.5%; } }
 
-@media all and (min-width: 768px) and (max-width: 959px) {
-  html {
-    font-size: 32.5%; } }
-
-@media all and (min-width: 480px) and (max-width: 767px) {
+@media all and (min-width: 374px) and (max-width: 480px) {
   html {
     font-size: 32.5%; } }
 
@@ -28,21 +24,13 @@ body {
   padding: 3rem;
   background-color: black; }
 
-@media all and (min-width: 1200px) and (max-width: 1690px) {
+@media all and (min-width: 481px) and (max-width: 1024px) {
   body {
     padding: 3rem; } }
 
-@media all and (min-width: 960px) and (max-width: 1199px) {
+@media all and (min-width: 374px) and (max-width: 480px) {
   body {
-    padding: 1rem; } }
-
-@media all and (min-width: 768px) and (max-width: 959px) {
-  body {
-    padding: .5em; } }
-
-@media all and (min-width: 480px) and (max-width: 767px) {
-  body {
-    padding: .5em; } }
+    padding: 1vw; } }
 
 .H {
   font-family: 'EB Garamond', serif; }
@@ -55,48 +43,20 @@ body {
   line-height: 8.5rem;
   letter-spacing: .5rem; }
 
-@media all and (min-width: 1200px) and (max-width: 1690px) {
-  .H--main {
-    font-size: 9rem;
-    line-height: 8.5rem;
-    letter-spacing: .5rem; } }
-
-@media all and (min-width: 960px) and (max-width: 1199px) {
-  .H--main {
-    font-size: 8rem;
-    letter-spacing: .25rem; } }
-
-@media all and (min-width: 768px) and (max-width: 959px) {
-  .H--main {
-    font-size: 7rem;
-    letter-spacing: 0rem; } }
-
-@media all and (min-width: 480px) and (max-width: 767px) {
-  .H--main {
-    font-size: 7rem;
-    letter-spacing: 0rem; } }
-
 .H--sub {
   font-family: 'EB Garamond', serif;
   font-weight: 400;
   color: #cdcdcd;
   font-size: 4.5rem; }
 
-@media all and (min-width: 1200px) and (max-width: 1690px) {
+@media all and (min-width: 374px) and (max-width: 480px) {
+  .H--main {
+    font-size: 7rem;
+    line-height: 8.5rem;
+    letter-spacing: .5rem; }
   .H--sub {
-    font-size: 4.5rem; } }
-
-@media all and (min-width: 960px) and (max-width: 1199px) {
-  .H--sub {
-    font-size: 4rem; } }
-
-@media all and (min-width: 768px) and (max-width: 959px) {
-  .H--sub {
-    font-size: 3.75rem; } }
-
-@media all and (min-width: 480px) and (max-width: 767px) {
-  .H--sub {
-    font-size: 3.75rem; } }
+    font-weight: 400;
+    font-size: 3.5rem; } }
 
 .S {
   color: #FFF;
@@ -105,6 +65,14 @@ body {
 .S--icon {
   color: #15bdff;
   font-size: 3rem; }
+
+@media all and (min-width: 374px) and (max-width: 480px) {
+  .S--icon {
+    font-size: 5rem; } }
+
+@media all and (min-width: 374px) and (max-width: 480px) {
+  .S {
+    font-size: 3.5rem; } }
 
 .container {
   font-family: 'Indie Flower', cursive; }
@@ -115,54 +83,10 @@ body {
   line-height: 8rem;
   display: inline; }
 
-@media all and (min-width: 1200px) and (max-width: 1690px) {
-  .container_main {
-    font-size: 10rem;
-    line-height: 8rem;
-    display: inline; } }
-
-@media all and (min-width: 960px) and (max-width: 1199px) {
-  .container_main {
-    font-size: 9rem;
-    line-height: 8rem;
-    display: block; } }
-
-@media all and (min-width: 768px) and (max-width: 959px) {
-  .container_main {
-    font-size: 8rem;
-    line-height: 7rem;
-    display: block; } }
-
-@media all and (min-width: 480px) and (max-width: 767px) {
-  .container_main {
-    font-size: 8rem;
-    line-height: 7rem;
-    display: block; } }
-
 .container_sub {
   font-size: 5rem;
   letter-spacing: .5rem;
   color: #f1f1f1; }
-
-@media all and (min-width: 1200px) and (max-width: 1690px) {
-  .container_sub {
-    font-size: 5rem;
-    letter-spacing: .5rem; } }
-
-@media all and (min-width: 960px) and (max-width: 1199px) {
-  .container_sub {
-    font-size: 4.5rem;
-    letter-spacing: .25rem; } }
-
-@media all and (min-width: 768px) and (max-width: 959px) {
-  .container_sub {
-    font-size: 4rem;
-    letter-spacing: 0rem; } }
-
-@media all and (min-width: 480px) and (max-width: 767px) {
-  .container_sub {
-    font-size: 4rem;
-    letter-spacing: 0rem; } }
 
 .inner {
   color: #FFF; }
@@ -203,19 +127,11 @@ body {
 .card:hover .inner {
   transform: translateY(-40rem); }
 
-@media all and (min-width: 1200px) and (max-width: 1690px) {
+@media all and (min-width: 481px) and (max-width: 1024px) {
   .card:hover .inner {
     transform: translateY(0rem); } }
 
-@media all and (min-width: 960px) and (max-width: 1199px) {
-  .card:hover .inner {
-    transform: translateY(0rem); } }
-
-@media all and (min-width: 768px) and (max-width: 959px) {
-  .card:hover .inner {
-    transform: translateY(0rem); } }
-
-@media all and (min-width: 480px) and (max-width: 767px) {
+@media all and (min-width: 374px) and (max-width: 480px) {
   .card:hover .inner {
     transform: translateY(0rem); } }
 
@@ -236,21 +152,15 @@ body {
   flex-direction: column;
   transition: all .5s; }
 
-@media all and (min-width: 1200px) and (max-width: 1690px) {
+@media all and (min-width: 481px) and (max-width: 1024px) {
   .card .inner {
-    top: 0rem; } }
+    top: 0rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)); } }
 
-@media all and (min-width: 960px) and (max-width: 1199px) {
+@media all and (min-width: 374px) and (max-width: 480px) {
   .card .inner {
-    top: 0rem; } }
-
-@media all and (min-width: 768px) and (max-width: 959px) {
-  .card .inner {
-    top: 0rem; } }
-
-@media all and (min-width: 480px) and (max-width: 767px) {
-  .card .inner {
-    top: 0rem; } }
+    top: 0rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)); } }
 
 .card .inner_header {
   margin-bottom: 5rem; }
@@ -261,6 +171,16 @@ body {
   grid-template-columns: 15rem 15rem;
   grid-column-gap: 13rem;
   align-items: center; }
+
+@media all and (min-width: 481px) and (max-width: 1024px) {
+  .card .inner_content {
+    grid-template-columns: 25rem 25rem;
+    grid-column-gap: 5rem; } }
+
+@media all and (min-width: 374px) and (max-width: 480px) {
+  .card .inner_content {
+    grid-template-columns: 25rem 25rem;
+    grid-column-gap: 5rem; } }
 
 .card .inner_button {
   display: inline-block;
@@ -288,34 +208,48 @@ body {
 .card--climbing {
   background-image: url("/images/tommy-lisbin-316758-unsplash.jpg"); }
 
+.main {
+  position: relative; }
+
+@media all and (min-width: 374px) and (max-width: 480px) {
+  .main {
+    width: 98vw; } }
+
 .header {
+  display: block;
   position: relative;
   height: 80vh;
-  width: 100%;
   background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("/images/mountain-biking.jpg");
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 70vh); }
+
+@media all and (min-width: 481px) and (max-width: 1024px) {
+  .header {
+    height: 50vh;
+    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 45vh);
+    margin-bottom: 5rem; } }
+
+@media all and (min-width: 374px) and (max-width: 480px) {
+  .header {
+    height: 55vh;
+    clip-path: none;
+    margin-bottom: 5rem; } }
 
 .header_container {
   width: 50%;
   padding-top: 17vh;
   padding-left: 10rem; }
 
-@media all and (min-width: 1200px) and (max-width: 1690px) {
+@media all and (min-width: 481px) and (max-width: 1024px) {
   .header_container {
-    width: 50%; } }
+    padding-top: 15vh;
+    width: 80%;
+    height: 30vh; } }
 
-@media all and (min-width: 960px) and (max-width: 1199px) {
+@media all and (min-width: 374px) and (max-width: 480px) {
   .header_container {
-    width: 60%; } }
-
-@media all and (min-width: 768px) and (max-width: 959px) {
-  .header_container {
-    width: 80%; } }
-
-@media all and (min-width: 480px) and (max-width: 767px) {
-  .header_container {
-    width: 80%; } }
+    width: 60%;
+    height: 30vh; } }
 
 .sports {
   width: 100%;
@@ -323,6 +257,10 @@ body {
   margin-bottom: 10vh;
   z-index: -1;
   padding-top: 10rem; }
+
+@media all and (min-width: 374px) and (max-width: 480px) {
+  .sports {
+    margin-bottom: 3vh; } }
 
 .sports_header {
   text-align: center;
@@ -378,35 +316,19 @@ body {
   background-size: cover;
   clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh); }
 
-@media all and (min-width: 1200px) and (max-width: 1690px) {
+@media all and (min-width: 481px) and (max-width: 1024px) {
   .guides_body {
-    flex-direction: row;
-    height: 80vh;
-    clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh); } }
-
-@media all and (min-width: 960px) and (max-width: 1199px) {
-  .guides_body {
+    clip-path: none;
+    margin-top: 3rem;
     flex-direction: column;
-    justify-content: center;
-    height: 80vh;
-    margin-top: 10vh;
-    clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh); } }
+    padding: 3rem 0rem; } }
 
-@media all and (min-width: 768px) and (max-width: 959px) {
+@media all and (min-width: 374px) and (max-width: 480px) {
   .guides_body {
-    font-size: 8rem;
-    line-height: 7rem;
-    margin-top: 5vh;
     clip-path: none;
-    height: 100vh; } }
-
-@media all and (min-width: 480px) and (max-width: 767px) {
-  .guides_body {
-    font-size: 8rem;
-    line-height: 7rem;
-    margin-top: 5vh;
-    clip-path: none;
-    height: 100vh; } }
+    margin-top: 3rem;
+    flex-direction: column;
+    padding: 3rem 0rem; } }
 
 .guide_card {
   display: flex;
@@ -416,51 +338,26 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   margin: 2rem; }
 
-@media all and (min-width: 1200px) and (max-width: 1690px) {
+@media all and (min-width: 1025px) and (max-width: 1600px) {
+  .guide_card {
+    width: 45rem;
+    height: 25rem; } }
+
+@media all and (min-width: 481px) and (max-width: 1024px) {
   .guide_card {
     height: 40rem;
-    width: 75rem;
-    margin: 2rem; } }
+    width: 95%; } }
 
-@media all and (min-width: 960px) and (max-width: 1199px) {
+@media all and (min-width: 374px) and (max-width: 480px) {
   .guide_card {
-    height: 30rem;
-    width: 90%;
-    margin: .25rem; } }
-
-@media all and (min-width: 768px) and (max-width: 959px) {
-  .guide_card {
-    height: 30rem;
-    width: 90%;
-    margin: 2rem; } }
-
-@media all and (min-width: 480px) and (max-width: 767px) {
-  .guide_card {
-    height: 30rem;
-    width: 90%;
-    margin: 2rem; } }
+    height: 40rem;
+    width: 95%; } }
 
 .guide_card-image {
-  height: 40rem;
+  height: 100%;
   width: 30rem;
   background-size: cover;
   overflow: hidden; }
-
-@media all and (min-width: 1200px) and (max-width: 1690px) {
-  .guide_card-image {
-    height: 40rem; } }
-
-@media all and (min-width: 960px) and (max-width: 1199px) {
-  .guide_card-image {
-    height: 30rem; } }
-
-@media all and (min-width: 768px) and (max-width: 959px) {
-  .guide_card-image {
-    height: 30rem; } }
-
-@media all and (min-width: 480px) and (max-width: 767px) {
-  .guide_card-image {
-    height: 30rem; } }
 
 .guide_card-bio {
   display: grid;
@@ -472,8 +369,24 @@ body {
 .guide_card--buckley {
   transform: translateY(-10rem); }
 
+@media all and (min-width: 481px) and (max-width: 1024px) {
+  .guide_card--buckley {
+    transform: translateY(0rem); } }
+
+@media all and (min-width: 374px) and (max-width: 480px) {
+  .guide_card--buckley {
+    transform: translateY(0rem); } }
+
 .guide_card--sally {
   transform: translateY(10rem); }
+
+@media all and (min-width: 481px) and (max-width: 1024px) {
+  .guide_card--sally {
+    transform: translateY(0rem); } }
+
+@media all and (min-width: 374px) and (max-width: 480px) {
+  .guide_card--sally {
+    transform: translateY(0rem); } }
 
 .guide_card #buckley {
   background-image: url("/images/buckley.jpg");
@@ -485,11 +398,11 @@ body {
 .guide_card #sally {
   background-image: url("/images/sallydeep.jpg"); }
 
-@media all and (min-width: 960px) and (max-width: 1199px) {
+@media all and (min-width: 481px) and (max-width: 1024px) {
   .guide_card #sally {
-    background-position-y: 50%; } }
+    background-position-y: 40%; } }
 
-@media all and (min-width: 480px) and (max-width: 767px) {
+@media all and (min-width: 374px) and (max-width: 480px) {
   .guide_card #sally {
     background-position-y: 50%; } }
 
@@ -510,5 +423,17 @@ body {
   display: flex;
   justify-content: space-around; }
 
-.footer_body p {
+@media all and (min-width: 374px) and (max-width: 480px) {
+  .footer_body {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; } }
+
+.footer_item p {
   padding-left: 1.5rem; }
+
+@media all and (min-width: 374px) and (max-width: 480px) {
+  .footer_item {
+    display: block;
+    margin: 2rem;
+    width: 50vw; } }
