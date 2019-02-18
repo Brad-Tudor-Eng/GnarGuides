@@ -142,7 +142,7 @@ body {
       display: grid;
       grid-template-rows: 8rem 8rem;
       grid-template-columns: 1fr 1fr;
-      grid-column-gap: .75fr;
+      grid-column-gap: 5rem;
       align-items: center; }
     .card .inner_button {
       display: inline-block;
