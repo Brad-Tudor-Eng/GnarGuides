@@ -195,12 +195,13 @@ body {
   padding-left: 10rem; }
   @media all and (min-width: 481px) and (max-width: 1024px) {
     .header_container {
-      padding-left: 5rem;
+      padding-left: 10rem;
       padding-top: 15vh;
       width: 80%;
       height: 30vh; } }
   @media all and (min-width: 374px) and (max-width: 480px) {
     .header_container {
+      padding-left: 5rem;
       width: 60%;
       height: 30vh; } }
 
