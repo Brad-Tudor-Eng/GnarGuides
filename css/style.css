@@ -53,7 +53,7 @@ body {
   .H--main {
     font-size: 6.5rem;
     margin-top: 0;
-    letter-spacing: .5rem; } }
+    letter-spacing: .1rem; } }
 
 @media all and (min-width: 374px) and (max-width: 480px) and (min-width: 374px) and (max-width: 480px) {
   .H--main {
