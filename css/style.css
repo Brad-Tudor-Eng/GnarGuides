@@ -125,6 +125,10 @@ body {
   overflow: hidden;
   background-size: cover; }
 
+@media all and (min-width: 374px) and (max-width: 480px) {
+  .card {
+    height: 30rem; } }
+
 .card:hover .inner {
   transform: translateY(-40rem); }
 

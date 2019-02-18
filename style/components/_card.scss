@@ -7,6 +7,10 @@
     overflow: hidden;
     background-size: cover;
 
+    @include respond(sm-phone){
+        height: 30rem;
+    }
+
     &:hover .inner{
         transform: translateY(-40rem);
 
@@ -22,8 +26,7 @@
     .icon{
         display: inline;
         margin-right: 2rem;
-
-
+        
     }
 
 
