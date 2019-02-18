@@ -79,6 +79,7 @@ body {
 
 .container_main {
   font-size: 10rem;
+  margin: -2rem;
   color: #f1f1f1;
   display: inline; }
 
