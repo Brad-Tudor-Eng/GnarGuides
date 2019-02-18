@@ -169,7 +169,7 @@ body {
   display: grid;
   grid-template-rows: 8rem 8rem;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: .25fr;
+  grid-column-gap: .75fr;
   align-items: center; }
 
 .card .inner_button {
