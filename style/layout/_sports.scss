@@ -13,6 +13,9 @@
         text-align: center;
         margin-top: 3rem;
         margin-bottom: -5rem;
+        @include respond(sm-phone){
+            margin-bottom: 2rem;
+        }
     }
 
     &_row{

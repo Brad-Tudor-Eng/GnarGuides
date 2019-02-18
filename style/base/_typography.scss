@@ -24,11 +24,8 @@
             font-size: 6.5rem;
             margin-top: 0;
             letter-spacing: .1rem;
+            line-height: 5rem;
 
-            @include respond(sm-phone){
-                line-height: 5rem;
-            }
-    
         }
     
         &--sub{

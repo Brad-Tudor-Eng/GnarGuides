@@ -53,13 +53,8 @@ body {
   .H--main {
     font-size: 6.5rem;
     margin-top: 0;
-    letter-spacing: .1rem; } }
-
-@media all and (min-width: 374px) and (max-width: 480px) and (min-width: 374px) and (max-width: 480px) {
-  .H--main {
-    line-height: 5rem; } }
-
-@media all and (min-width: 374px) and (max-width: 480px) {
+    letter-spacing: .1rem;
+    line-height: 5rem; }
   .H--sub {
     font-weight: 400;
     font-size: 3.5rem; } }
@@ -262,6 +257,10 @@ body {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: -5rem; }
+
+@media all and (min-width: 374px) and (max-width: 480px) {
+  .sports_header {
+    margin-bottom: 2rem; } }
 
 .sports_row {
   display: flex;
