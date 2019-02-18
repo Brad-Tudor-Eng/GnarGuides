@@ -24,6 +24,10 @@
             font-size: 7rem;
             line-height: 8.5rem;
             letter-spacing: .5rem;
+
+            @include respond(sm-phone){
+                line-height: 5rem;
+            }
     
         }
     
@@ -60,14 +64,13 @@
     font-family: 'Indie Flower', cursive;
     &_main{
         font-size: 10rem;
-        margin: -2rem;
         color: $color-grey-o;
         display: inline;
 
     }
 
     &_sub{
-        font-size: 5rem;
+        font-size: 4.5rem;
         letter-spacing: .5rem;
         color: $color-grey-o;
 

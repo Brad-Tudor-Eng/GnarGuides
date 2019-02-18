@@ -6,7 +6,7 @@
 
 html {
   font-size: 62.5%; }
-  @media all and (min-width: 481px) and (max-width: 1024px) {
+  @media all and (min-width: 1025px) and (max-width: 1600px) {
     html {
       font-size: 52.5%; } }
   @media all and (min-width: 481px) and (max-width: 1024px) {
@@ -45,7 +45,11 @@ body {
     .H--main {
       font-size: 7rem;
       line-height: 8.5rem;
-      letter-spacing: .5rem; }
+      letter-spacing: .5rem; } }
+  @media all and (min-width: 374px) and (max-width: 480px) and (min-width: 374px) and (max-width: 480px) {
+    .H--main {
+      line-height: 5rem; } }
+  @media all and (min-width: 374px) and (max-width: 480px) {
     .H--sub {
       font-weight: 400;
       font-size: 3.5rem; } }
@@ -67,11 +71,10 @@ body {
   font-family: 'Indie Flower', cursive; }
   .container_main {
     font-size: 10rem;
-    margin: -2rem;
     color: #f1f1f1;
     display: inline; }
   .container_sub {
-    font-size: 5rem;
+    font-size: 4.5rem;
     letter-spacing: .5rem;
     color: #f1f1f1; }
 
