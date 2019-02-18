@@ -9,26 +9,6 @@
         line-height: 8.5rem;
         letter-spacing: .5rem;
 
-        @include respond(desktop){
-            font-size: 9rem;
-            line-height: 8.5rem;
-            letter-spacing: .5rem;
-         }
-     
-         @include respond(tab){
-            font-size: 8rem;
-            letter-spacing: .25rem;
-         }
-
-         @include respond(lg-phone){
-            font-size: 7rem;
-            letter-spacing: 0rem;
-        }
-
-        @include respond(sm-phone){
-            font-size: 7rem;
-            letter-spacing: 0rem;
-        }
     }
 
     &--sub{
@@ -37,25 +17,21 @@
         color: $color-grey-1;
         font-size: 4.5rem;
 
-        @include respond(desktop){
-            font-size: 4.5rem;
-         }
-     
-         @include respond(tab){
-            font-size: 4rem;
-         }
-
-         @include respond(lg-phone){
-            font-size: 3.75rem;
-        }
-
-        @include respond(sm-phone){
-            font-size: 3.75rem;
-        }
     }
 
-    &--tertiary{
-
+    @include respond(sm-phone){
+        &--main{
+            font-size: 7rem;
+            line-height: 8.5rem;
+            letter-spacing: .5rem;
+    
+        }
+    
+        &--sub{
+            font-weight: 400;
+            font-size: 3.5rem;
+    
+        }
     }
 }
 
@@ -66,6 +42,14 @@
     &--icon{
         color: $color-secondary-light;
         font-size: 3rem;
+
+        @include respond(sm-phone){
+            font-size: 5rem;
+        }
+    }
+
+    @include respond(sm-phone){
+        font-size: 3.5rem;
     }
 }
 
@@ -80,29 +64,6 @@
         line-height: 8rem;
         display: inline;
 
-        @include respond(desktop){
-            font-size: 10rem;
-            line-height: 8rem;
-            display: inline;
-         }
-     
-         @include respond(tab){
-            font-size: 9rem;
-            line-height: 8rem;
-            display: block;
-         }
-
-         @include respond(lg-phone){
-            font-size: 8rem;
-            line-height: 7rem;
-            display: block;
-        }
-
-        @include respond(sm-phone){
-            font-size: 8rem;
-            line-height: 7rem;
-            display: block;
-        }
     }
 
     &_sub{
@@ -110,25 +71,6 @@
         letter-spacing: .5rem;
         color: $color-grey-o;
 
-        @include respond(desktop){
-            font-size: 5rem;
-            letter-spacing: .5rem;
-         }
-     
-         @include respond(tab){
-            font-size: 4.5rem;
-            letter-spacing: .25rem;
-         }
-
-         @include respond(lg-phone){
-            font-size: 4rem;
-            letter-spacing: 0rem;
-        }
-
-        @include respond(sm-phone){
-            font-size: 4rem;
-            letter-spacing: 0rem;
-        }
     }
 }
 

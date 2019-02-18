@@ -1,18 +1,15 @@
 @mixin respond($breakpoint) {
-    @if $breakpoint == sm-phone{
-        @media all and (min-width: 480px) and (max-width: 767px){@content};
-    }
 
-    @if $breakpoint == lg-phone{ 
-        @media all and (min-width: 768px) and (max-width: 959px) {@content};
+    @if $breakpoint == sm-phone{
+        @media all and (min-width: 374px) and (max-width: 480px){@content};
     }
 
     @if $breakpoint == tab{
-        @media all and (min-width: 960px) and (max-width: 1199px) {@content};
+        @media all and (min-width: 481px) and (max-width: 1024px){@content};
     }
 
     @if $breakpoint == desktop{
-        @media all and (min-width: 1200px) and (max-width: 1690px) {@content};
+        @media all and (min-width: 1025px) and (max-width:  1600px){@content};
     }
 }
 

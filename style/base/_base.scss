@@ -8,19 +8,14 @@
 html{
     font-size: 62.5%;
 
-
-    @include respond(desktop){
-        font-size: 62.5%;
+    @include respond(tab){
+        font-size: 52.5%;
     }
     
     @include respond(tab){
-        font-size: 47%;
-     }
-    
-    @include respond(lg-phone){
-        font-size: 32.5%;
+        font-size: 42.5%;
     }
-    
+
     @include respond(sm-phone){
         font-size: 32.5%;
     }
@@ -32,20 +27,11 @@ body{
     padding: 3rem;
     background-color: black;
 
-
-    @include respond(desktop){
+    @include respond(tab){
         padding: 3rem;
     }
-    
-    @include respond(tab){
-        padding: 1rem;
-     }
-    
-    @include respond(lg-phone){
-        padding: .5em;
-    }
-    
+
     @include respond(sm-phone){
-        padding: .5em;
+        padding: 1vw;
     }
 }

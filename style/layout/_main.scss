@@ -1,34 +1,48 @@
 .main{
-  
+    position: relative;    
+
+    @include respond(sm-phone){
+        width: 98vw;
+    }
 }
 
 .header{
+    display: block;
     position: relative;    
     height: 80vh;
-    width: 100%;
     background-image: -webkit-linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0)) , url('/images/mountain-biking.jpg')   ;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 70vh);
+
+    @include respond(tab){
+        height: 50vh;
+        clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 45vh);
+        margin-bottom: 5rem;
+    }
+
+    @include respond(sm-phone){
+        height: 55vh;
+        clip-path: none;
+        margin-bottom: 5rem;
+    }
+
+
 }
 
 .header_container{
     width: 50%;
     padding-top: 17vh;
     padding-left: 10rem;
-    @include respond(desktop){
-        width: 50%;
-     }
- 
-     @include respond(tab){
-        width: 60%;
-     }
 
-     @include respond(lg-phone){
+    @include respond(tab){
+        padding-top: 15vh;
         width: 80%;
+        height: 30vh;
     }
 
     @include respond(sm-phone){
-        width: 80%;
+        width: 60%;
+        height: 30vh;
     }
 
 }

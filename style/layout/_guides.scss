@@ -5,6 +5,8 @@
 .guides_header{
     text-align: center;
     margin-top: 3rem;
+
+
 }
 
 .guides_body{
@@ -17,40 +19,19 @@
     background-size: cover;
     clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh);
 
-
-
-
-    @include respond(desktop){
-       flex-direction: row;
-       height: 80vh;
-       clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh);
-    }
-
     @include respond(tab){
-        flex-direction: column;
-        justify-content: center;
-        height: 80vh;
-        margin-top: 10vh;
-        clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 70vh);
-    }
-
-    @include respond(lg-phone){
-        font-size: 8rem;
-        line-height: 7rem;
-        margin-top: 5vh;
         clip-path: none;
-        height: 100vh;
+        margin-top: 3rem;
+        flex-direction: column;
+        padding: 3rem 0rem;
     }
 
     @include respond(sm-phone){
-        font-size: 8rem;
-        line-height: 7rem;
-        margin-top: 5vh;
         clip-path: none;
-        height: 100vh;
+        margin-top: 3rem;
+        flex-direction: column;
+        padding: 3rem 0rem;
     }
-
-
 
 }
 
@@ -63,50 +44,26 @@
     margin: 2rem;
 
     @include respond(desktop){
+        width: 45rem;
+        height: 25rem;
+    }
+
+    @include respond(tab){
         height: 40rem;
-        width: 75rem;
-        margin: 2rem;   
-     }
- 
-     @include respond(tab){
-        height: 30rem;
-        width: 90%;   
-        margin: .25rem;
-     }
+        width: 95%; 
+    }
 
-     @include respond(lg-phone){
-        height: 30rem;
-        width: 90%;   
-        margin: 2rem;
-     }
-
-     @include respond(sm-phone){
-        height: 30rem;
-        width: 90%;   
-        margin: 2rem;
-     }
+    @include respond(sm-phone){
+        height: 40rem;
+        width: 95%; 
+    }
 
     &-image{
-        height: 40rem;
+        height: 100%;
         width: 30rem;
         background-size: cover;
         overflow: hidden;
 
-        @include respond(desktop){
-            height: 40rem;
-        }
-    
-        @include respond(tab){
-            height: 30rem;
-        }
-
-        @include respond(lg-phone){
-            height: 30rem;   
-         }
-
-         @include respond(sm-phone){
-            height: 30rem;   
-         }
     }
 
     &-bio{
@@ -119,11 +76,27 @@
     }
 
     &--buckley{
-        transform: translateY(-10rem)
+        transform: translateY(-10rem);
+
+        @include respond(tab){
+            transform: translateY(0rem);
+        }
+
+        @include respond(sm-phone){
+            transform: translateY(0rem);
+        }
     }
 
     &--sally{
-        transform: translateY(10rem)
+        transform: translateY(10rem);
+
+        @include respond(tab){
+            transform: translateY(0rem);
+        }
+
+        @include respond(sm-phone){
+            transform: translateY(0rem);
+        }
     }
 
     #buckley{
@@ -139,16 +112,12 @@
         background-image: url('/images/sallydeep.jpg');
 
         @include respond(tab){
-            background-position-y: 50%;
-         }
+            background-position-y: 40%;
+        }
 
-        @include respond(ls-phone){
+        @include respond(sm-phone){
             background-position-y: 50%;
-         }
-
-         @include respond(sm-phone){
-            background-position-y: 50%;
-         }
+        }
     }
 }
 

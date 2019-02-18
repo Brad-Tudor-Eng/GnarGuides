@@ -14,8 +14,23 @@
         display: flex;
         justify-content: space-around;
 
+        @include respond(sm-phone){
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+
+    &_item{
+        
         & p{
             padding-left: 1.5rem;
         }
+        @include respond(sm-phone){
+            display: block;
+            margin: 2rem;
+            width: 50vw;
+        }
+
     }
 }

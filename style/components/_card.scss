@@ -10,18 +10,10 @@
     &:hover .inner{
         transform: translateY(-40rem);
 
-        @include respond(desktop){
-            transform: translateY(0rem);
-        }
-        
         @include respond(tab){
             transform: translateY(0rem);
-         }
-        
-        @include respond(lg-phone){
-            transform: translateY(0rem);
         }
-        
+
         @include respond(sm-phone){
             transform: translateY(0rem);
         }
@@ -30,6 +22,8 @@
     .icon{
         display: inline;
         margin-right: 2rem;
+
+
     }
 
 
@@ -46,20 +40,14 @@
         flex-direction: column;
         transition: all .5s;
 
-        @include respond(desktop){
-            top: 0rem;
-        }
-        
         @include respond(tab){
             top: 0rem;
-         }
-        
-        @include respond(lg-phone){
-            top: 0rem;
+            background-image: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65));
         }
-        
+
         @include respond(sm-phone){
             top: 0rem;
+            background-image: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65));
         }
 
         &_header{
@@ -72,6 +60,16 @@
             grid-template-columns: 15rem 15rem;
             grid-column-gap: 13rem;
             align-items: center;
+
+            @include respond(tab){
+                grid-template-columns: 25rem 25rem;
+                grid-column-gap: 5rem;
+            }
+
+            @include respond(sm-phone){
+                grid-template-columns: 25rem 25rem;
+                grid-column-gap: 5rem;
+            }
  
         }
 
@@ -83,6 +81,8 @@
             background-color: rgba(0,0,0,0);
             cursor: pointer;
         }
+
+
     }
 
     &--pg{
