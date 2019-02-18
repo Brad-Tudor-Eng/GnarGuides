@@ -195,6 +195,7 @@ body {
   padding-left: 10rem; }
   @media all and (min-width: 481px) and (max-width: 1024px) {
     .header_container {
+      padding-left: 5rem;
       padding-top: 15vh;
       width: 80%;
       height: 30vh; } }
@@ -235,6 +236,9 @@ body {
   animation-name: example;
   animation-duration: 1s;
   animation-iteration-count: infinite; }
+  @media all and (min-width: 374px) and (max-width: 480px) {
+    .innerUp {
+      display: none; } }
 
 @keyframes example {
   0% {
